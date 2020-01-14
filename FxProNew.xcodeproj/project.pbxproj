@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840078FC23CE2B790049EB74 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840078FB23CE2B790049EB74 /* Card.swift */; };
+		840078FF23CE30CF0049EB74 /* CornerRadiusCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840078FE23CE30CF0049EB74 /* CornerRadiusCustomizable.swift */; };
 		8408762E23CDECA8009FBA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408762D23CDECA8009FBA24 /* AppDelegate.swift */; };
 		8408763023CDECA8009FBA24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408762F23CDECA8009FBA24 /* SceneDelegate.swift */; };
 		8408763223CDECA8009FBA24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408763123CDECA8009FBA24 /* ViewController.swift */; };
-		8408763523CDECA8009FBA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408763323CDECA8009FBA24 /* Main.storyboard */; };
 		8408763723CDECAA009FBA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8408763623CDECAA009FBA24 /* Assets.xcassets */; };
 		8408763A23CDECAA009FBA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408763823CDECAA009FBA24 /* LaunchScreen.storyboard */; };
+		8408764623CDF0B5009FBA24 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764223CDF0B5009FBA24 /* Coordinating.swift */; };
+		8408764723CDF0B5009FBA24 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764323CDF0B5009FBA24 /* NavigationCoordinator.swift */; };
+		8408764823CDF0B5009FBA24 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764423CDF0B5009FBA24 /* Coordinator.swift */; };
+		8408764923CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764523CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift */; };
+		8408764D23CDF428009FBA24 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764C23CDF428009FBA24 /* ApplicationCoordinator.swift */; };
+		8408764F23CDF457009FBA24 /* TutorialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408764E23CDF457009FBA24 /* TutorialCoordinator.swift */; };
+		8408765123CDF5FA009FBA24 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408765023CDF5FA009FBA24 /* AppDependency.swift */; };
+		8408765423CDF646009FBA24 /* SliderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408765323CDF646009FBA24 /* SliderManager.swift */; };
+		8408765723CDFCA2009FBA24 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408765623CDFCA2009FBA24 /* Tutorial.storyboard */; };
+		8408765923CE01B0009FBA24 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408765823CE01B0009FBA24 /* TutorialViewController.swift */; };
+		CA4391B8628745C245EDF06A /* Pods_FxProNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239E92450FABB93F411B0D /* Pods_FxProNew.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26964D5F1F61985141CE0DCE /* Pods-FxProNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FxProNew.debug.xcconfig"; path = "Target Support Files/Pods-FxProNew/Pods-FxProNew.debug.xcconfig"; sourceTree = "<group>"; };
+		39BD2334D764E168043E8DCF /* Pods-FxProNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FxProNew.release.xcconfig"; path = "Target Support Files/Pods-FxProNew/Pods-FxProNew.release.xcconfig"; sourceTree = "<group>"; };
+		840078FB23CE2B790049EB74 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		840078FE23CE30CF0049EB74 /* CornerRadiusCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusCustomizable.swift; sourceTree = "<group>"; };
 		8408762A23CDECA8009FBA24 /* FxProNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FxProNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408762D23CDECA8009FBA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8408762F23CDECA8009FBA24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8408763123CDECA8009FBA24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8408763423CDECA8009FBA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8408763623CDECAA009FBA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8408763923CDECAA009FBA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408763B23CDECAA009FBA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8408764223CDF0B5009FBA24 /* Coordinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		8408764323CDF0B5009FBA24 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		8408764423CDF0B5009FBA24 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8408764523CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit-CoordinatingExtensions.swift"; sourceTree = "<group>"; };
+		8408764C23CDF428009FBA24 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		8408764E23CDF457009FBA24 /* TutorialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCoordinator.swift; sourceTree = "<group>"; };
+		8408765023CDF5FA009FBA24 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		8408765323CDF646009FBA24 /* SliderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderManager.swift; sourceTree = "<group>"; };
+		8408765623CDFCA2009FBA24 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		8408765823CE01B0009FBA24 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		95239E92450FABB93F411B0D /* Pods_FxProNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FxProNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4391B8628745C245EDF06A /* Pods_FxProNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840078FD23CE30BA0049EB74 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				840078FE23CE30CF0049EB74 /* CornerRadiusCustomizable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		8408762123CDECA8009FBA24 = {
 			isa = PBXGroup;
 			children = (
 				8408762C23CDECA8009FBA24 /* FxProNew */,
 				8408762B23CDECA8009FBA24 /* Products */,
+				B66903913A39A29ADD1C2A61 /* Pods */,
+				862510E6DE0C0145F01251C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,91 @@
 		8408762C23CDECA8009FBA24 /* FxProNew */ = {
 			isa = PBXGroup;
 			children = (
+				840078FD23CE30BA0049EB74 /* Protocols */,
+				8408765C23CE1683009FBA24 /* UI */,
+				8408765523CDFC84009FBA24 /* Storyboards */,
+				8408765223CDF631009FBA24 /* Managers */,
+				8408764B23CDF40E009FBA24 /* ViewControllers */,
+				8408764A23CDF407009FBA24 /* Coordinators */,
+				8408765023CDF5FA009FBA24 /* AppDependency.swift */,
 				8408762D23CDECA8009FBA24 /* AppDelegate.swift */,
 				8408762F23CDECA8009FBA24 /* SceneDelegate.swift */,
 				8408763123CDECA8009FBA24 /* ViewController.swift */,
-				8408763323CDECA8009FBA24 /* Main.storyboard */,
 				8408763623CDECAA009FBA24 /* Assets.xcassets */,
 				8408763823CDECAA009FBA24 /* LaunchScreen.storyboard */,
 				8408763B23CDECAA009FBA24 /* Info.plist */,
+				8408764123CDF0B5009FBA24 /* Coordinator */,
 			);
 			path = FxProNew;
+			sourceTree = "<group>";
+		};
+		8408764123CDF0B5009FBA24 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8408764223CDF0B5009FBA24 /* Coordinating.swift */,
+				8408764323CDF0B5009FBA24 /* NavigationCoordinator.swift */,
+				8408764423CDF0B5009FBA24 /* Coordinator.swift */,
+				8408764523CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8408764A23CDF407009FBA24 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8408764C23CDF428009FBA24 /* ApplicationCoordinator.swift */,
+				8408764E23CDF457009FBA24 /* TutorialCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8408764B23CDF40E009FBA24 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8408765823CE01B0009FBA24 /* TutorialViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8408765223CDF631009FBA24 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8408765323CDF646009FBA24 /* SliderManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8408765523CDFC84009FBA24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8408765623CDFCA2009FBA24 /* Tutorial.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8408765C23CE1683009FBA24 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				840078FB23CE2B790049EB74 /* Card.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		862510E6DE0C0145F01251C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95239E92450FABB93F411B0D /* Pods_FxProNew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66903913A39A29ADD1C2A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26964D5F1F61985141CE0DCE /* Pods-FxProNew.debug.xcconfig */,
+				39BD2334D764E168043E8DCF /* Pods-FxProNew.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8408763E23CDECAA009FBA24 /* Build configuration list for PBXNativeTarget "FxProNew" */;
 			buildPhases = (
+				3B26A20A91621F1634386F4B /* [CP] Check Pods Manifest.lock */,
 				8408762623CDECA8009FBA24 /* Sources */,
 				8408762723CDECA8009FBA24 /* Frameworks */,
 				8408762823CDECA8009FBA24 /* Resources */,
@@ -127,34 +241,62 @@
 			files = (
 				8408763A23CDECAA009FBA24 /* LaunchScreen.storyboard in Resources */,
 				8408763723CDECAA009FBA24 /* Assets.xcassets in Resources */,
-				8408763523CDECA8009FBA24 /* Main.storyboard in Resources */,
+				8408765723CDFCA2009FBA24 /* Tutorial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B26A20A91621F1634386F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FxProNew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8408762623CDECA8009FBA24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840078FF23CE30CF0049EB74 /* CornerRadiusCustomizable.swift in Sources */,
+				8408764923CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift in Sources */,
 				8408763223CDECA8009FBA24 /* ViewController.swift in Sources */,
+				8408765423CDF646009FBA24 /* SliderManager.swift in Sources */,
 				8408762E23CDECA8009FBA24 /* AppDelegate.swift in Sources */,
+				8408764823CDF0B5009FBA24 /* Coordinator.swift in Sources */,
+				8408764623CDF0B5009FBA24 /* Coordinating.swift in Sources */,
+				8408764723CDF0B5009FBA24 /* NavigationCoordinator.swift in Sources */,
+				8408765123CDF5FA009FBA24 /* AppDependency.swift in Sources */,
 				8408763023CDECA8009FBA24 /* SceneDelegate.swift in Sources */,
+				8408764F23CDF457009FBA24 /* TutorialCoordinator.swift in Sources */,
+				8408765923CE01B0009FBA24 /* TutorialViewController.swift in Sources */,
+				8408764D23CDF428009FBA24 /* ApplicationCoordinator.swift in Sources */,
+				840078FC23CE2B790049EB74 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8408763323CDECA8009FBA24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8408763423CDECA8009FBA24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8408763823CDECAA009FBA24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +424,7 @@
 		};
 		8408763F23CDECAA009FBA24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26964D5F1F61985141CE0DCE /* Pods-FxProNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +443,7 @@
 		};
 		8408764023CDECAA009FBA24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BD2334D764E168043E8DCF /* Pods-FxProNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
