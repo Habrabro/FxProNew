@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 857463fbf6e083368a1ddd16f7be33edffbdc214
+PODS:
+  - CollectionAndTableViewCompatible (0.2.2)
+  - lottie-ios (3.1.5)
+
+DEPENDENCIES:
+  - CollectionAndTableViewCompatible
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - CollectionAndTableViewCompatible
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  CollectionAndTableViewCompatible: 10a37e76c29faa193595f7d345e4353473e4ce92
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+
+PODFILE CHECKSUM: 6a1127b0ea4d1c4984a5b146c4ac3399689c41ee
 
 COCOAPODS: 1.8.4

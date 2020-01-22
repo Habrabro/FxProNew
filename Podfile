@@ -6,5 +6,7 @@ target 'FxProNew' do
   use_frameworks!
 
   # Pods for FxProNew
+  pod "CollectionAndTableViewCompatible"
+  pod 'lottie-ios'
 
 end

@@ -10,43 +10,51 @@ import UIKit
 
 class TutorialViewController: UIViewController {
     
-    //MARK: Outlets
+    // MARK: Constants
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    let IPHONE_6_7_8_SCREEN_HEIGHT: CGFloat = 667
     
-    var data: [CollectionViewCellModel] = []
+    // MARK: Outlets
+    
+    @IBOutlet weak var tutorialCollectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
+    
+    // MARK: Public properties
+    
+    var data: [TutorialCollectionViewCellModel] = [] {
+        didSet {}
+    }
+    
+    // MARK: Private properties
+    
+    private var tutorialCollectionViewController: TutorialCollectionViewController!
+    
+    // MARK: Lifecycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
+        setupConstraints()
         setupCollectionView()
     }
     
-    //MARK: Private methods
+    // MARK: Actions
+    
+    
+    
+    // MARK: Private methods
+    
+    private func setupConstraints() {
+        if UIScreen.main.bounds.height < IPHONE_6_7_8_SCREEN_HEIGHT {
+            collectionViewTopConstraint.constant = 15
+            collectionViewBottomConstraint.constant = 40
+        }
+    }
     
     private func setupCollectionView() {
-        let model = CollectionViewCellModel(title: "Something")
-        data = [model]
-        let collectionViewDataSource = CollectionViewDataSource()
-        collectionView.dataSource = collectionViewDataSource
-        collectionViewDataSource.data = data
-        
-        collectionView.reloadData()
-    }
-    
-}
-
-extension TutorialViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let model = data[indexPath.row]
-        let cell = model.cellForCollectionView(collectionView: collectionView, atIndexPath: indexPath)
-        return cell
+        tutorialCollectionViewController = TutorialCollectionViewController(collectionView: tutorialCollectionView, data: data, pageControl: pageControl)
     }
     
 }

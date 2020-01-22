@@ -1,18 +1,18 @@
 //
-//  Card.swift
+//  PrimaryButton.swift
 //  FxProNew
 //
-//  Created by admin on 14/01/2020.
+//  Created by admin on 17/01/2020.
 //  Copyright © 2020 admin. All rights reserved.
 //
 
 import UIKit
 
-class Card: UIView, CornerRadiusCustomizable {
+class PrimaryButton: UIButton, CornerRadiusCustomizable {
     
     // MARK: Constants
     
-    let CORNER_RADIUS: CGFloat = 14
+    let CORNER_RADIUS: CGFloat = 23
     
     // MARK: Initializers
     

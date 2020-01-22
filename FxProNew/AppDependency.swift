@@ -10,12 +10,10 @@ import Foundation
 
 struct AppDependency {
     
-    var sliderManager: SliderManager?
-    
     //MARK: Init
     
-    init(sliderManager: SliderManager? = nil) {
-        self.sliderManager = sliderManager
+    init() {
+        
     }
     
 }
