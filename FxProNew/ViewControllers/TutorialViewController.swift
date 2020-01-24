@@ -40,6 +40,11 @@ class TutorialViewController: UIViewController {
         setupCollectionView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     // MARK: Actions
     
     

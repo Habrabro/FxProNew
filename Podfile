@@ -8,5 +8,11 @@ target 'FxProNew' do
   # Pods for FxProNew
   pod "CollectionAndTableViewCompatible"
   pod 'lottie-ios'
+  pod 'Alamofire', '~> 4.9.1'
+  pod 'ObjectMapper', '~> 3.4'
+  pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.2.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'IQKeyboardManagerSwift'
+  pod 'TweeTextField'
 
 end

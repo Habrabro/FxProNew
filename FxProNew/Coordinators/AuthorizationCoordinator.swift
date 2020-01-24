@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
 
 class AuthorizationCoordinator: Coordinator<UIViewController> {
     
-    static let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
+    // MARK: Pages
     
+    static let storyboard = UIStoryboard(name: "Authorization", bundle: nil)
+
     enum pages {
         case login
         case registration
@@ -27,6 +31,8 @@ class AuthorizationCoordinator: Coordinator<UIViewController> {
             }
         }
     }
+    
+    // MARK: Lifecycle methods
     
     override func start(with completion: @escaping () -> Void = {}) {
         super.start()

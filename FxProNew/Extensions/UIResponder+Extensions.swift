@@ -17,5 +17,9 @@ extension UIResponder {
     @objc dynamic func showRegistration() {
         coordinatingResponder?.showRegistration()
     }
+
+//    @objc dynamic func login(login: String, password: String, completion: @escaping (String?) -> ()) {
+//        coordinatingResponder?.login(login: login, password: password, completion: completion)
+//    }
     
 }

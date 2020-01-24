@@ -27,7 +27,10 @@
 		8408765123CDF5FA009FBA24 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408765023CDF5FA009FBA24 /* AppDependency.swift */; };
 		8408765723CDFCA2009FBA24 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408765623CDFCA2009FBA24 /* Tutorial.storyboard */; };
 		8408765923CE01B0009FBA24 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408765823CE01B0009FBA24 /* TutorialViewController.swift */; };
-		8417EF9E23D7179100FE596D /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417EF9D23D7179100FE596D /* AccountManager.swift */; };
+		8408FB1D23D99AD600E8BAB6 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */; };
+		8408FB2023D9D0C500E8BAB6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB1F23D9D0C500E8BAB6 /* LoginResponse.swift */; };
+		8408FB2223D9D10400E8BAB6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB2123D9D10400E8BAB6 /* BaseResponse.swift */; };
+		8417EF9E23D7179100FE596D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417EF9D23D7179100FE596D /* NetworkService.swift */; };
 		8417EFA123D7539B00FE596D /* FxPro_Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA023D7539B00FE596D /* FxPro_Logo.json */; };
 		8417EFA823D7562500FE596D /* Shield.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA423D7562500FE596D /* Shield.json */; };
 		8417EFA923D7562500FE596D /* Phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA523D7562500FE596D /* Phone.json */; };
@@ -68,7 +71,10 @@
 		8408765023CDF5FA009FBA24 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		8408765623CDFCA2009FBA24 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		8408765823CE01B0009FBA24 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		8417EF9D23D7179100FE596D /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		8408FB1F23D9D0C500E8BAB6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		8408FB2123D9D10400E8BAB6 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		8417EF9D23D7179100FE596D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8417EFA023D7539B00FE596D /* FxPro_Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FxPro_Logo.json; path = FxProNew/RawAnimations/FxPro_Logo.json; sourceTree = SOURCE_ROOT; };
 		8417EFA423D7562500FE596D /* Shield.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Shield.json; path = FxProNew/RawAnimations/Shield.json; sourceTree = SOURCE_ROOT; };
 		8417EFA523D7562500FE596D /* Phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Phone.json; path = FxProNew/RawAnimations/Phone.json; sourceTree = SOURCE_ROOT; };
@@ -99,8 +105,9 @@
 		8403C24123D888F2005C0711 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8403C23F23D875F5005C0711 /* UICollectionView+Extensions.swift */,
 				8403C24C23D891DB005C0711 /* UIResponder+Extensions.swift */,
+				8403C23F23D875F5005C0711 /* UICollectionView+Extensions.swift */,
+				8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 		8408762C23CDECA8009FBA24 /* FxProNew */ = {
 			isa = PBXGroup;
 			children = (
+				8408FB1E23D9D0AB00E8BAB6 /* Model */,
 				8403C24123D888F2005C0711 /* Extensions */,
 				8417EF9F23D7535C00FE596D /* Animations */,
 				84C6435D23D0AF2E00DD4494 /* Protocols */,
@@ -182,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				84C9C66223D5E9E700BB388E /* TutorialDataProvider.swift */,
-				8417EF9D23D7179100FE596D /* AccountManager.swift */,
+				8417EF9D23D7179100FE596D /* NetworkService.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -203,6 +211,15 @@
 				8425F30A23D2065C00EFAF08 /* PrimaryButton.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		8408FB1E23D9D0AB00E8BAB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8408FB2123D9D10400E8BAB6 /* BaseResponse.swift */,
+				8408FB1F23D9D0C500E8BAB6 /* LoginResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8417EF9F23D7535C00FE596D /* Animations */ = {
@@ -389,22 +406,25 @@
 				8408764823CDF0B5009FBA24 /* Coordinator.swift in Sources */,
 				84C6435A23D0ACEE00DD4494 /* TutorialCollectionViewCell.swift in Sources */,
 				84C9C66323D5E9E700BB388E /* TutorialDataProvider.swift in Sources */,
+				8408FB1D23D99AD600E8BAB6 /* UINavigationController+Extensions.swift in Sources */,
 				8403C24023D875F5005C0711 /* UICollectionView+Extensions.swift in Sources */,
 				8403C24523D88B29005C0711 /* LoginViewController.swift in Sources */,
 				8425F30B23D2065C00EFAF08 /* PrimaryButton.swift in Sources */,
 				8403C24923D88B58005C0711 /* AuthorizationCoordinator.swift in Sources */,
 				8408764623CDF0B5009FBA24 /* Coordinating.swift in Sources */,
 				8408764723CDF0B5009FBA24 /* NavigationCoordinator.swift in Sources */,
+				8408FB2023D9D0C500E8BAB6 /* LoginResponse.swift in Sources */,
 				8408765123CDF5FA009FBA24 /* AppDependency.swift in Sources */,
 				8408763023CDECA8009FBA24 /* SceneDelegate.swift in Sources */,
 				8408764F23CDF457009FBA24 /* TutorialCoordinator.swift in Sources */,
-				8417EF9E23D7179100FE596D /* AccountManager.swift in Sources */,
+				8417EF9E23D7179100FE596D /* NetworkService.swift in Sources */,
 				8403C24D23D891DB005C0711 /* UIResponder+Extensions.swift in Sources */,
 				8408765923CE01B0009FBA24 /* TutorialViewController.swift in Sources */,
 				84C6435823D0ACEE00DD4494 /* TutorialCollectionViewCellModel.swift in Sources */,
 				8403C24723D88B39005C0711 /* RegistrationViewController.swift in Sources */,
 				8408764D23CDF428009FBA24 /* ApplicationCoordinator.swift in Sources */,
 				840078FC23CE2B790049EB74 /* Card.swift in Sources */,
+				8408FB2223D9D10400E8BAB6 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

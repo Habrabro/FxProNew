@@ -1,20 +1,53 @@
 PODS:
+  - Alamofire (4.9.1)
   - CollectionAndTableViewCompatible (0.2.2)
+  - IQKeyboardManagerSwift (6.5.5)
   - lottie-ios (3.1.5)
+  - MBProgressHUD (1.2.0)
+  - ObjectMapper (3.5.1)
+  - SwiftValidator (4.0.0)
+  - TweeTextField (1.6.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
   - CollectionAndTableViewCompatible
+  - IQKeyboardManagerSwift
   - lottie-ios
+  - MBProgressHUD (~> 1.2.0)
+  - ObjectMapper (~> 3.4)
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, tag `4.2.0`)
+  - TweeTextField
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CollectionAndTableViewCompatible
+    - IQKeyboardManagerSwift
     - lottie-ios
+    - MBProgressHUD
+    - ObjectMapper
+    - TweeTextField
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.2.0
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.2.0
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   CollectionAndTableViewCompatible: 10a37e76c29faa193595f7d345e4353473e4ce92
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SwiftValidator: 249b6b3ae3b294266c5b9de134d94f18f2d5aa47
+  TweeTextField: 2bfb6c48fdbf6eb8038260430244c9f6ebb47bce
 
-PODFILE CHECKSUM: 6a1127b0ea4d1c4984a5b146c4ac3399689c41ee
+PODFILE CHECKSUM: fed27c2b66819e2603bb20f64ca352d3f8cb126a
 
 COCOAPODS: 1.8.4

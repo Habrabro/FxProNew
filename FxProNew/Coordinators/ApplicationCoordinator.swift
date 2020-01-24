@@ -28,9 +28,7 @@ final class ApplicationCoordinator: Coordinator<UIViewController> {
     
     var section: Section? {
         didSet {
-            try? pushChild(coordinator: section!.coordinator) {
-                (self.rootViewController as! UINavigationController).navigationBar.isHidden = false
-            }
+            try? pushChild(coordinator: section!.coordinator)
         }
     }
     
@@ -38,9 +36,6 @@ final class ApplicationCoordinator: Coordinator<UIViewController> {
         super.start()
         
         section = .tutorial(page: .defaultPage)
-        
-        guard let rootViewController = self.rootViewController as? UINavigationController else { return }
-        rootViewController.navigationBar.isHidden = true
     }
     
     func pushChild(coordinator: Coordinator<UIViewController>, animated: Bool = true, completion: @escaping () -> Void = {}) throws {
