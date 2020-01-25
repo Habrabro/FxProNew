@@ -14,6 +14,8 @@
 		8403C24923D88B58005C0711 /* AuthorizationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C24823D88B58005C0711 /* AuthorizationCoordinator.swift */; };
 		8403C24B23D89100005C0711 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8403C24A23D89100005C0711 /* Authorization.storyboard */; };
 		8403C24D23D891DB005C0711 /* UIResponder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403C24C23D891DB005C0711 /* UIResponder+Extensions.swift */; };
+		8404DC1523DC7307002708A4 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404DC1423DC7307002708A4 /* BaseError.swift */; };
+		8404DC1723DC7346002708A4 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404DC1623DC7346002708A4 /* ServiceError.swift */; };
 		8408762E23CDECA8009FBA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408762D23CDECA8009FBA24 /* AppDelegate.swift */; };
 		8408763023CDECA8009FBA24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408762F23CDECA8009FBA24 /* SceneDelegate.swift */; };
 		8408763723CDECAA009FBA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8408763623CDECAA009FBA24 /* Assets.xcassets */; };
@@ -30,19 +32,20 @@
 		8408FB1D23D99AD600E8BAB6 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */; };
 		8408FB2023D9D0C500E8BAB6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB1F23D9D0C500E8BAB6 /* LoginResponse.swift */; };
 		8408FB2223D9D10400E8BAB6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8408FB2123D9D10400E8BAB6 /* BaseResponse.swift */; };
-		8417EF9E23D7179100FE596D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417EF9D23D7179100FE596D /* NetworkService.swift */; };
 		8417EFA123D7539B00FE596D /* FxPro_Logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA023D7539B00FE596D /* FxPro_Logo.json */; };
 		8417EFA823D7562500FE596D /* Shield.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA423D7562500FE596D /* Shield.json */; };
 		8417EFA923D7562500FE596D /* Phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA523D7562500FE596D /* Phone.json */; };
 		8417EFAA23D7562500FE596D /* Analyse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA623D7562500FE596D /* Analyse.json */; };
 		8417EFAB23D7562500FE596D /* Support.json in Resources */ = {isa = PBXBuildFile; fileRef = 8417EFA723D7562500FE596D /* Support.json */; };
 		8425F30B23D2065C00EFAF08 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8425F30A23D2065C00EFAF08 /* PrimaryButton.swift */; };
+		842A8E5C23DB4A7900857FA8 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E5B23DB4A7900857FA8 /* Dictionary+Extensions.swift */; };
 		84C6435123D09F3600DD4494 /* TutorialCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C6434F23D09F3600DD4494 /* TutorialCollectionViewCell.xib */; };
 		84C6435823D0ACEE00DD4494 /* TutorialCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6435323D0ACEE00DD4494 /* TutorialCollectionViewCellModel.swift */; };
 		84C6435923D0ACEE00DD4494 /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6435423D0ACEE00DD4494 /* TutorialCollectionViewController.swift */; };
 		84C6435A23D0ACEE00DD4494 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6435523D0ACEE00DD4494 /* TutorialCollectionViewCell.swift */; };
 		84C6436323D0AF2E00DD4494 /* CornerRadiusCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6436023D0AF2E00DD4494 /* CornerRadiusCustomizable.swift */; };
 		84C9C66323D5E9E700BB388E /* TutorialDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C9C66223D5E9E700BB388E /* TutorialDataProvider.swift */; };
+		84FE1A6023DB07A3009C8A8F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE1A5F23DB07A3009C8A8F /* HTTPClient.swift */; };
 		CA4391B8628745C245EDF06A /* Pods_FxProNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239E92450FABB93F411B0D /* Pods_FxProNew.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,8 @@
 		8403C24823D88B58005C0711 /* AuthorizationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationCoordinator.swift; sourceTree = "<group>"; };
 		8403C24A23D89100005C0711 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		8403C24C23D891DB005C0711 /* UIResponder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extensions.swift"; sourceTree = "<group>"; };
+		8404DC1423DC7307002708A4 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		8404DC1623DC7346002708A4 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		8408762A23CDECA8009FBA24 /* FxProNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FxProNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8408762D23CDECA8009FBA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8408762F23CDECA8009FBA24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,19 +79,20 @@
 		8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		8408FB1F23D9D0C500E8BAB6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		8408FB2123D9D10400E8BAB6 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
-		8417EF9D23D7179100FE596D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8417EFA023D7539B00FE596D /* FxPro_Logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = FxPro_Logo.json; path = FxProNew/RawAnimations/FxPro_Logo.json; sourceTree = SOURCE_ROOT; };
 		8417EFA423D7562500FE596D /* Shield.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Shield.json; path = FxProNew/RawAnimations/Shield.json; sourceTree = SOURCE_ROOT; };
 		8417EFA523D7562500FE596D /* Phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Phone.json; path = FxProNew/RawAnimations/Phone.json; sourceTree = SOURCE_ROOT; };
 		8417EFA623D7562500FE596D /* Analyse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Analyse.json; path = FxProNew/RawAnimations/Analyse.json; sourceTree = SOURCE_ROOT; };
 		8417EFA723D7562500FE596D /* Support.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Support.json; path = FxProNew/RawAnimations/Support.json; sourceTree = SOURCE_ROOT; };
 		8425F30A23D2065C00EFAF08 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		842A8E5B23DB4A7900857FA8 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		84C6434F23D09F3600DD4494 /* TutorialCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCollectionViewCell.xib; sourceTree = "<group>"; };
 		84C6435323D0ACEE00DD4494 /* TutorialCollectionViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		84C6435423D0ACEE00DD4494 /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
 		84C6435523D0ACEE00DD4494 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		84C6436023D0AF2E00DD4494 /* CornerRadiusCustomizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusCustomizable.swift; sourceTree = "<group>"; };
 		84C9C66223D5E9E700BB388E /* TutorialDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDataProvider.swift; sourceTree = "<group>"; };
+		84FE1A5F23DB07A3009C8A8F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		95239E92450FABB93F411B0D /* Pods_FxProNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FxProNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 				8403C24C23D891DB005C0711 /* UIResponder+Extensions.swift */,
 				8403C23F23D875F5005C0711 /* UICollectionView+Extensions.swift */,
 				8408FB1C23D99AD600E8BAB6 /* UINavigationController+Extensions.swift */,
+				842A8E5B23DB4A7900857FA8 /* Dictionary+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,7 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				84C9C66223D5E9E700BB388E /* TutorialDataProvider.swift */,
-				8417EF9D23D7179100FE596D /* NetworkService.swift */,
+				84FE1A5F23DB07A3009C8A8F /* HTTPClient.swift */,
+				8404DC1423DC7307002708A4 /* BaseError.swift */,
+				8404DC1623DC7346002708A4 /* ServiceError.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -401,9 +410,12 @@
 			files = (
 				84C6435923D0ACEE00DD4494 /* TutorialCollectionViewController.swift in Sources */,
 				84C6436323D0AF2E00DD4494 /* CornerRadiusCustomizable.swift in Sources */,
+				8404DC1723DC7346002708A4 /* ServiceError.swift in Sources */,
 				8408764923CDF0B5009FBA24 /* UIKit-CoordinatingExtensions.swift in Sources */,
+				842A8E5C23DB4A7900857FA8 /* Dictionary+Extensions.swift in Sources */,
 				8408762E23CDECA8009FBA24 /* AppDelegate.swift in Sources */,
 				8408764823CDF0B5009FBA24 /* Coordinator.swift in Sources */,
+				84FE1A6023DB07A3009C8A8F /* HTTPClient.swift in Sources */,
 				84C6435A23D0ACEE00DD4494 /* TutorialCollectionViewCell.swift in Sources */,
 				84C9C66323D5E9E700BB388E /* TutorialDataProvider.swift in Sources */,
 				8408FB1D23D99AD600E8BAB6 /* UINavigationController+Extensions.swift in Sources */,
@@ -412,12 +424,12 @@
 				8425F30B23D2065C00EFAF08 /* PrimaryButton.swift in Sources */,
 				8403C24923D88B58005C0711 /* AuthorizationCoordinator.swift in Sources */,
 				8408764623CDF0B5009FBA24 /* Coordinating.swift in Sources */,
+				8404DC1523DC7307002708A4 /* BaseError.swift in Sources */,
 				8408764723CDF0B5009FBA24 /* NavigationCoordinator.swift in Sources */,
 				8408FB2023D9D0C500E8BAB6 /* LoginResponse.swift in Sources */,
 				8408765123CDF5FA009FBA24 /* AppDependency.swift in Sources */,
 				8408763023CDECA8009FBA24 /* SceneDelegate.swift in Sources */,
 				8408764F23CDF457009FBA24 /* TutorialCoordinator.swift in Sources */,
-				8417EF9E23D7179100FE596D /* NetworkService.swift in Sources */,
 				8403C24D23D891DB005C0711 /* UIResponder+Extensions.swift in Sources */,
 				8408765923CE01B0009FBA24 /* TutorialViewController.swift in Sources */,
 				84C6435823D0ACEE00DD4494 /* TutorialCollectionViewCellModel.swift in Sources */,

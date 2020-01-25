@@ -308,5 +308,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8990DE81-8FFE-46C5-AB61-36C2BFB69417"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FxProNew/ViewControllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AC4F555-06A0-427B-AA15-B4927263F22E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FxProNew/Middleware/HTTPClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "request(_:method:parameters:encoding:headers:responseContentType:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AC4F555-06A0-427B-AA15-B4927263F22E - cf79895f3c1bf112"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FxProNew.HTTPClient.request&lt;A where A: FxProNew.BaseResponse&gt;(_: Swift.String, method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, encoding: FxProNew.HTTPClient.Encodings, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, responseContentType: Swift.Array&lt;FxProNew.HTTPClient.ContentTypes&gt;, completion: (Swift.Optional&lt;A&gt;, Swift.Optional&lt;FxProNew.BaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FxProNew"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/Xcode%20projects/FxProNew/FxProNew/Middleware/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1247">
+               </Location>
+               <Location
+                  uuid = "4AC4F555-06A0-427B-AA15-B4927263F22E - 77d359bcf742b479"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (FxProNew.HTTPClient.ContentTypes) -&gt; Swift.String in FxProNew.HTTPClient.request&lt;A where A: FxProNew.BaseResponse&gt;(_: Swift.String, method: Alamofire.HTTPMethod, parameters: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, encoding: FxProNew.HTTPClient.Encodings, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, responseContentType: Swift.Array&lt;FxProNew.HTTPClient.ContentTypes&gt;, completion: (Swift.Optional&lt;A&gt;, Swift.Optional&lt;FxProNew.BaseError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "FxProNew"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/Xcode%20projects/FxProNew/FxProNew/Middleware/HTTPClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

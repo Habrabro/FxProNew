@@ -59,21 +59,27 @@ class LoginViewController: UIViewController {
     
     private func login() {
         guard let login = loginTextField.text, let password = passwordTextField.text else { return }
-        let networkService = NetworkService()
-        networkService.login(login: login, password: password) { response, error in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return
+        let httpClient = HTTPClient(baseURL: "https://api-dev.brn.ai/api/")
+        let parameters = ["login": login, "password": password]
+        httpClient.request("customer/login", method: .post, parameters: parameters, encoding: .JSON, responseContentType: [.applicationJSON]) { (response: LoginResponse?, error) in
+            if let token = response?.token {
+                print(token)
+                self.showAlert(title: "Token", message: token, buttonLabel: "Close")
             }
-            guard let loginResponse = response as? LoginResponse else { return }
-            guard let token = loginResponse.token else { return }
-            
-            let alert = UIAlertController(title: "Token", message: token, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-            print("Token: " + token)
+            switch error {
+            case let .custom(description):
+                print(description)
+                self.showAlert(title: "Error", message: description ?? "No description", buttonLabel: "Close")
+            default:
+                self.showAlert(title: "Error", message: error.debugDescription, buttonLabel: "Close")
+            }
         }
+    }
+    
+    private func showAlert(title: String, message: String, buttonLabel: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: buttonLabel, style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
@@ -82,10 +88,16 @@ extension LoginViewController: ValidationDelegate {
     
     func validationSuccessful() {
         login()
+        loginTextField.hideInfo()
+        passwordTextField.hideInfo()
     }
     
     func validationFailed(_ errors: [(Validatable, ValidationError)]) {
-        //
+        for (field, error) in errors {
+            if let field = field as? TweeAttributedTextField {
+                field.showInfo(error.errorMessage, animated: true)
+            }
+        }
     }
     
 }
